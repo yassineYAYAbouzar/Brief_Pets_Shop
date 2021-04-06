@@ -57,7 +57,7 @@ include 'header.php';
                     <h2 class="titular">MENU BOX</h2>
                     <ul class="menu-box-menu">
                         <li>
-                            <a class="menu-box-tab" href="castumer.php"><span class="icon fas fa-store scnd-font-color"></span>Products<div class="menu-box-number">5</div></a>                            
+                            <a class="menu-box-tab" href="Prodact.php"><span class="icon fas fa-store scnd-font-color"></span>Products<div class="menu-box-number">5</div></a>                            
                         </li>
                         <li>
                             <a class="menu-box-tab" href="salesdetaile.php"><span class="icon fas fa-info-circle scnd-font-color"></span>Salesdetails</a>

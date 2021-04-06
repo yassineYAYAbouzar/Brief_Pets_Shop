@@ -1,227 +1,61 @@
+<title>Sales Detailes</title>
+
 <?php
 include 'header.php';
+include 'conect.php';
+$stmt2 = $con->prepare("SELECT * FROM `animals`");
+$stmt2->execute();
+
 ?>
+
 <link rel="stylesheet" href="css/tabel.css">
-        <body class="saledetaile">
-            <section>
-              <h1>Table Fixed</h1>
-              <div class="tbl-header" style="padding-right: 168px;">
-                <table  cellpadding="0" cellspacing="0" style="    width: 131%;">
-                  <thead>
-                    <tr>
-                      <th>NAMA</th>
-                      <th>Alamat</th>
-                      <th>Status</th>
-                      <th>Telp</th>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-              <div class="tbl-content">
-                <table cellpadding="0" cellspacing="0" style="    width: 131%;">
-                  <tbody>
-                    <tr>
-                      <td>Suratno</td>
-                      <td>Jakarta</td>
-                      <td>Nikah</td>
-                      <td>081231544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratni</td>
-                      <td>Surabaya</td>
-                      <td>Pelajar</td>
-                      <td>082154325</td>
-                    </tr>
-                    <tr>
-                      <td>Wibowo</td>
-                      <td>Jogjakarta</td>
-                      <td>Nikah</td>
-                      <td>078546521</td>
-                    </tr>
-                    <tr>
-                      <td>Rusadi</td>
-                      <td>Lampung</td>
-                      <td>Pelajar</td>
-                      <td>024584544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratno</td>
-                      <td>Jakarta</td>
-                      <td>Nikah</td>
-                      <td>081231544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratni</td>
-                      <td>Surabaya</td>
-                      <td>Pelajar</td>
-                      <td>082154325</td>
-                    </tr>
-                    <tr>
-                      <td>Wibowo</td>
-                      <td>Jogjakarta</td>
-                      <td>Nikah</td>
-                      <td>078546521</td>
-                    </tr>
-                    <tr>
-                      <td>Rusadi</td>
-                      <td>Lampung</td>
-                      <td>Pelajar</td>
-                      <td>024584544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratno</td>
-                      <td>Jakarta</td>
-                      <td>Nikah</td>
-                      <td>081231544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratni</td>
-                      <td>Surabaya</td>
-                      <td>Pelajar</td>
-                      <td>082154325</td>
-                    </tr>
-                    <tr>
-                      <td>Wibowo</td>
-                      <td>Jogjakarta</td>
-                      <td>Nikah</td>
-                      <td>078546521</td>
-                    </tr>
-                    <tr>
-                      <td>Rusadi</td>
-                      <td>Lampung</td>
-                      <td>Pelajar</td>
-                      <td>024584544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratno</td>
-                      <td>Jakarta</td>
-                      <td>Nikah</td>
-                      <td>081231544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratni</td>
-                      <td>Surabaya</td>
-                      <td>Pelajar</td>
-                      <td>082154325</td>
-                    </tr>
-                    <tr>
-                      <td>Wibowo</td>
-                      <td>Jogjakarta</td>
-                      <td>Nikah</td>
-                      <td>078546521</td>
-                    </tr>
-                    <tr>
-                      <td>Rusadi</td>
-                      <td>Lampung</td>
-                      <td>Pelajar</td>
-                      <td>024584544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratno</td>
-                      <td>Jakarta</td>
-                      <td>Nikah</td>
-                      <td>081231544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratni</td>
-                      <td>Surabaya</td>
-                      <td>Pelajar</td>
-                      <td>082154325</td>
-                    </tr>
-                    <tr>
-                      <td>Wibowo</td>
-                      <td>Jogjakarta</td>
-                      <td>Nikah</td>
-                      <td>078546521</td>
-                    </tr>
-                    <tr>
-                      <td>Rusadi</td>
-                      <td>Lampung</td>
-                      <td>Pelajar</td>
-                      <td>024584544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratno</td>
-                      <td>Jakarta</td>
-                      <td>Nikah</td>
-                      <td>081231544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratni</td>
-                      <td>Surabaya</td>
-                      <td>Pelajar</td>
-                      <td>082154325</td>
-                    </tr>
-                    <tr>
-                      <td>Wibowo</td>
-                      <td>Jogjakarta</td>
-                      <td>Nikah</td>
-                      <td>078546521</td>
-                    </tr>
-                    <tr>
-                      <td>Rusadi</td>
-                      <td>Lampung</td>
-                      <td>Pelajar</td>
-                      <td>024584544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratno</td>
-                      <td>Jakarta</td>
-                      <td>Nikah</td>
-                      <td>081231544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratni</td>
-                      <td>Surabaya</td>
-                      <td>Pelajar</td>
-                      <td>082154325</td>
-                    </tr>
-                    <tr>
-                      <td>Wibowo</td>
-                      <td>Jogjakarta</td>
-                      <td>Nikah</td>
-                      <td>078546521</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td>Rusadi</td>
-                      <td>Lampung</td>
-                      <td>Pelajar</td>
-                      <td>024584544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratno</td>
-                      <td>Jakarta</td>
-                      <td>Nikah</td>
-                      <td>081231544</td>
-                    </tr>
-                    <tr>
-                      <td>Suratni</td>
-                      <td>Surabaya</td>
-                      <td>Pelajar</td>
-                      <td>082154325</td>
-                    </tr>
-                    <tr>
-                      <td>Wibowo</td>
-                      <td>Jogjakarta</td>
-                      <td>Nikah</td>
-                      <td>078546521</td>
-                    </tr>
-                    <tr>
-                      <td>Rusadi</td>
-                      <td>Lampung</td>
-                      <td>Pelajar</td>
-                      <td>024584544</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-            
-            </body>
-    </div> <!-- end main-container -->
+<body class="animals">
+     <section>
+       <h1>Tableux De Sales Detailes</h1>
+       <div class="tbl-header">
+         <table cellpadding="0" cellspacing="0">
+           <thead>
+             <tr>
+               <th>Pet_iD</th>
+               <th>Petcategory</th>
+               <th>Breed</th>
+               <th>Weight(kg)</th>
+               <th>Height(cm)</th>
+               <th>Age(m)</th>
+               <th>Fur</th>
+               <th>Cost(Rs)</th>
+             </tr>
+           </thead>
+         </table>
+       </div>
+       <div class="tbl-content">
+         <table cellpadding="0" cellspacing="0">
+           <tbody>
+     <?php
+     foreach ($stmt2 as $stm) {
+     echo '  
+             <tr>
+               <td>' .$stm['pet_id'] .'</td>
+               <td>' .$stm['category'] .'</td>
+               <td>' .$stm['breed'] .'</td>
+               <td>' .$stm['weight'] .'</td>
+               <td>' .$stm['height'] .'</td>
+               <td>' .$stm['age'] .'</td>
+               <td>' .$stm['fur'] .'</td>
+               <td>' .$stm['cost'] .'</td>
+             </tr>
+           
+     ';};
+     ?>
+     </tbody>
+         </table>
+       </div>
+     </section>
+     
+     </body>
+</div> <!-- end main-container -->
     <div class="botons">
-    <button type="submit"class="btn btn-5 danger ">Delete<i style="margin-left: 5px;" class="fas fa-trash"></i></button>
+    <button type="submit"class="btn btn-5 danger">Delete<i style="margin-left: 5px;" class="fas fa-trash"></i></button>
     <button type="submit"class="btn btn-5 primery">Update<i style="margin-left: 5px;"  class="far fa-edit"></i></button>
     <button type="submit"class="btn btn-5">Add<i style="margin-left: 5px;"  class="fas fa-plus-circle"></i></button>
     <div class="deletis">
@@ -230,7 +64,7 @@ include 'header.php';
     </div>
 
     </div>
-    <?php
+<?php
 include 'footer.php'
 ?>
 

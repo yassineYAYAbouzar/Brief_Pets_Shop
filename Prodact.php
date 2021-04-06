@@ -1,4 +1,4 @@
-<title>Customers</title>
+<title>Prodact</title>
 
 <?php
 include 'header.php';
@@ -11,7 +11,7 @@ $stmt2->execute();
 <link rel="stylesheet" href="css/tabel.css">
 <body class="animals">
      <section>
-       <h1>Tableux De Customers</h1>
+       <h1>Tableux De animaux</h1>
        <div class="tbl-header">
          <table cellpadding="0" cellspacing="0">
            <thead>

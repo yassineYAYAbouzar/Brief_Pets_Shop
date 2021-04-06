@@ -27,9 +27,6 @@ include 'header.php';
     <input type=""  class="form-control col-lg-5 d-inline" name="Age" placeholder="Enter Age" >
     <input type="" class="form-control col-lg-5 d-inline" name="Fur" placeholder="Enter Fur" >
   </div>
-  <div class="form-group">
-    <input type="" class="form-control" name="Cost" placeholder="Enter Cost">
-  </div>
   <button type="submit" name="save" class="btn btn-info btn-block">Save</button>
 </form>
 <?php
@@ -43,8 +40,7 @@ if(isset($_POST['save'])){
   $Height =$_POST['Height'];
   $Age =$_POST['Age'];
   $Fur=$_POST['Fur'];
-  $Cost=$_POST['Cost'];
-  $stmts = $con->prepare("INSERT INTO `animals` (`pet_id`, `category`, `breed`, `weight`, `height`, `age`, `fur`, `cost`) VALUES ('$Pet_iD', '$Pet_category', '$Breed', '$Weight', ' $Height', '$Age', '$Fur', '$Cost');");
+  $stmts = $con->prepare("INSERT INTO `animals` (`id_produit`, `id_client`, `breed`, `weight`, `height`, `age`, `fur`) VALUES ('$Pet_iD', '$Pet_category', '$Breed', '$Weight', ' $Height', '$Age', '$Fur');");
   $stmts->execute();
   echo "<script>window.location.assign('animals.php') ;</script>";
 }
