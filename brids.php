@@ -52,7 +52,7 @@ $stmt2->execute();
     <div class="botons">
     <button type="submit" name="delete" class="btn btn-5 danger">Delete<i style="margin-left: 5px;" class="fas fa-trash"></i></button>
     <button type="submit"name="update" class="btn btn-5 primery">Update<i style="margin-left: 5px;"  class="far fa-edit"></i></button>
-    <button class="btn btn-5"><a href="add_bird.php"> Add</a><i style="margin-left: 5px;"  class="fas fa-plus-circle"></i></button>
+    <button type="submit"name="add" class="btn btn-5"> Add<i style="margin-left: 5px;"  class="fas fa-plus-circle"></i></button>
     <div class="deletis">
         <input type="text" name="id"  placeholder="Enter Id To edit or delete">
 
@@ -77,8 +77,11 @@ if (isset($_POST['update'])){
    header("location: up_birds.php");
 
 }
+if (isset($_POST['add'])){
+  header("location: add_bird.php");
+
+}
 ?>
 
 </body>
-
 </html>
