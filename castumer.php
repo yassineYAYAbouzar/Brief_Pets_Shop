@@ -1,0 +1,273 @@
+<title>Castumer</title>
+
+<?php
+include 'header.php';
+?>
+<link rel="stylesheet" href="css/tabel.css">
+        <body class="castumer">
+            <section>
+              <h1>Table Fixed</h1>
+              <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>NO</th>
+                      <th>NAMA</th>
+                      <th>Alamat</th>
+                      <th>Status</th>
+                      <th>Telp</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Suratno</td>
+                      <td>Jakarta</td>
+                      <td>Nikah</td>
+                      <td>081231544</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Suratni</td>
+                      <td>Surabaya</td>
+                      <td>Pelajar</td>
+                      <td>082154325</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Wibowo</td>
+                      <td>Jogjakarta</td>
+                      <td>Nikah</td>
+                      <td>078546521</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Rusadi</td>
+                      <td>Lampung</td>
+                      <td>Pelajar</td>
+                      <td>024584544</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Suratno</td>
+                      <td>Jakarta</td>
+                      <td>Nikah</td>
+                      <td>081231544</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Suratni</td>
+                      <td>Surabaya</td>
+                      <td>Pelajar</td>
+                      <td>082154325</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Wibowo</td>
+                      <td>Jogjakarta</td>
+                      <td>Nikah</td>
+                      <td>078546521</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Rusadi</td>
+                      <td>Lampung</td>
+                      <td>Pelajar</td>
+                      <td>024584544</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Suratno</td>
+                      <td>Jakarta</td>
+                      <td>Nikah</td>
+                      <td>081231544</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Suratni</td>
+                      <td>Surabaya</td>
+                      <td>Pelajar</td>
+                      <td>082154325</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>Wibowo</td>
+                      <td>Jogjakarta</td>
+                      <td>Nikah</td>
+                      <td>078546521</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>Rusadi</td>
+                      <td>Lampung</td>
+                      <td>Pelajar</td>
+                      <td>024584544</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>Suratno</td>
+                      <td>Jakarta</td>
+                      <td>Nikah</td>
+                      <td>081231544</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>Suratni</td>
+                      <td>Surabaya</td>
+                      <td>Pelajar</td>
+                      <td>082154325</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>Wibowo</td>
+                      <td>Jogjakarta</td>
+                      <td>Nikah</td>
+                      <td>078546521</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>Rusadi</td>
+                      <td>Lampung</td>
+                      <td>Pelajar</td>
+                      <td>024584544</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>Suratno</td>
+                      <td>Jakarta</td>
+                      <td>Nikah</td>
+                      <td>081231544</td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td>Suratni</td>
+                      <td>Surabaya</td>
+                      <td>Pelajar</td>
+                      <td>082154325</td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>Wibowo</td>
+                      <td>Jogjakarta</td>
+                      <td>Nikah</td>
+                      <td>078546521</td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>Rusadi</td>
+                      <td>Lampung</td>
+                      <td>Pelajar</td>
+                      <td>024584544</td>
+                    </tr>
+                    <tr>
+                      <td>21</td>
+                      <td>Suratno</td>
+                      <td>Jakarta</td>
+                      <td>Nikah</td>
+                      <td>081231544</td>
+                    </tr>
+                    <tr>
+                      <td>22</td>
+                      <td>Suratni</td>
+                      <td>Surabaya</td>
+                      <td>Pelajar</td>
+                      <td>082154325</td>
+                    </tr>
+                    <tr>
+                      <td>23</td>
+                      <td>Wibowo</td>
+                      <td>Jogjakarta</td>
+                      <td>Nikah</td>
+                      <td>078546521</td>
+                    </tr>
+                    <tr>
+                      <td>24</td>
+                      <td>Rusadi</td>
+                      <td>Lampung</td>
+                      <td>Pelajar</td>
+                      <td>024584544</td>
+                    </tr>
+                    <tr>
+                      <td>25</td>
+                      <td>Suratno</td>
+                      <td>Jakarta</td>
+                      <td>Nikah</td>
+                      <td>081231544</td>
+                    </tr>
+                    <tr>
+                      <td>26</td>
+                      <td>Suratni</td>
+                      <td>Surabaya</td>
+                      <td>Pelajar</td>
+                      <td>082154325</td>
+                    </tr>
+                    <tr>
+                      <td>27</td>
+                      <td>Wibowo</td>
+                      <td>Jogjakarta</td>
+                      <td>Nikah</td>
+                      <td>078546521</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Rusadi</td>
+                      <td>Lampung</td>
+                      <td>Pelajar</td>
+                      <td>024584544</td>
+                    </tr>
+                    <tr>
+                      <td>28</td>
+                      <td>Suratno</td>
+                      <td>Jakarta</td>
+                      <td>Nikah</td>
+                      <td>081231544</td>
+                    </tr>
+                    <tr>
+                      <td>29</td>
+                      <td>Suratni</td>
+                      <td>Surabaya</td>
+                      <td>Pelajar</td>
+                      <td>082154325</td>
+                    </tr>
+                    <tr>
+                      <td>30</td>
+                      <td>Wibowo</td>
+                      <td>Jogjakarta</td>
+                      <td>Nikah</td>
+                      <td>078546521</td>
+                    </tr>
+                    <tr>
+                      <td>31</td>
+                      <td>Rusadi</td>
+                      <td>Lampung</td>
+                      <td>Pelajar</td>
+                      <td>024584544</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            
+            </body>
+    </div> <!-- end main-container -->
+    <div class="botons">
+    <button type="submit"class="btn btn-5 danger ">Delete<i style="margin-left: 5px;" class="fas fa-trash"></i></button>
+    <button type="submit"class="btn btn-5 primery">Update<i style="margin-left: 5px;"  class="far fa-edit"></i></button>
+    <button type="submit"class="btn btn-5">Add<i style="margin-left: 5px;"  class="fas fa-plus-circle"></i></button>
+    <div class="deletis">
+        <i class="fas fa-trash"></i>
+        <input type="text"  placeholder="Enter Id To delete">
+    </div>
+
+    </div>
+    <?php
+include 'footer.php'
+?>
+
+</body>
+
+</html>
