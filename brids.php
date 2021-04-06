@@ -3,7 +3,7 @@
 <?php
 include 'header.php';
 include 'conect.php';
-$stmt2 = $con->prepare("SELECT * FROM `animals`");
+$stmt2 = $con->prepare("SELECT * FROM `birds`");
 $stmt2->execute();
 
 ?>
@@ -16,13 +16,10 @@ $stmt2->execute();
          <table cellpadding="0" cellspacing="0">
            <thead>
              <tr>
-               <th>Pet_iD</th>
-               <th>Petcategory</th>
-               <th>Breed</th>
-               <th>Weight(kg)</th>
-               <th>Height(cm)</th>
-               <th>Age(m)</th>
-               <th>Fur</th>
+               <th>Bird_iD</th>
+               <th>Category</th>
+               <th>type</th>
+               <th>noise</th>
                <th>Cost(Rs)</th>
              </tr>
            </thead>
@@ -35,13 +32,10 @@ $stmt2->execute();
      foreach ($stmt2 as $stm) {
      echo '  
              <tr>
-               <td>' .$stm['pet_id'] .'</td>
-               <td>' .$stm['category'] .'</td>
-               <td>' .$stm['breed'] .'</td>
-               <td>' .$stm['weight'] .'</td>
-               <td>' .$stm['height'] .'</td>
-               <td>' .$stm['age'] .'</td>
-               <td>' .$stm['fur'] .'</td>
+               <td>' .$stm['id'] .'</td>
+               <td>' .$stm['category'].'</td>
+               <td>' .$stm['type'] .'</td>   
+               <td>' .$stm['noise'] .'</td>  
                <td>' .$stm['cost'] .'</td>
              </tr>
            
@@ -54,18 +48,35 @@ $stmt2->execute();
      
      </body>
 </div> <!-- end main-container -->
+<form action="brids.php" method="POST">
     <div class="botons">
-    <button type="submit"class="btn btn-5 danger">Delete<i style="margin-left: 5px;" class="fas fa-trash"></i></button>
-    <button type="submit"class="btn btn-5 primery">Update<i style="margin-left: 5px;"  class="far fa-edit"></i></button>
-    <button type="submit"class="btn btn-5">Add<i style="margin-left: 5px;"  class="fas fa-plus-circle"></i></button>
+    <button type="submit" name="delete" class="btn btn-5 danger">Delete<i style="margin-left: 5px;" class="fas fa-trash"></i></button>
+    <button type="submit"name="update" class="btn btn-5 primery">Update<i style="margin-left: 5px;"  class="far fa-edit"></i></button>
+    <button class="btn btn-5"><a href="add_bird.php"> Add</a><i style="margin-left: 5px;"  class="fas fa-plus-circle"></i></button>
     <div class="deletis">
-        <i class="fas fa-trash"></i>
-        <input type="text"  placeholder="Enter Id To delete">
+        <input type="text" name="id"  placeholder="Enter Id To edit or delete">
+
     </div>
 
     </div>
+    </form>
 <?php
-include 'footer.php'
+include 'footer.php';
+if (isset($_POST['delete'])){
+  $sql = "DELETE FROM birds WHERE id =  :id";
+$stmt = $con->prepare($sql);
+$stmt->bindParam(':id', $_POST['id'], PDO::PARAM_INT);   
+$stmt->execute();
+          $page = $_SERVER['PHP_SELF'];
+          $sec = "0.001";
+          header("Refresh: $sec; url=$page");  
+
+}
+if (isset($_POST['update'])){
+   $_SESSION['id']= $_POST['id'];
+   header("location: up_birds.php");
+
+}
 ?>
 
 </body>

@@ -25,13 +25,13 @@ if(isset($_SESSION['ussername'])){
         <header class="block">
             <ul class="header-menu horizontal-list">
                 <li>
-                    <a class="header-menu-tab" href="#1"><span style="font-size: 3rem;margin-right: 7px;color: #00bcd4; margin-top: 7px;" class="fa fa-paw " ></span><span id="titel"></span></a>
+                    <a class="header-menu-tab" href="home.php"><span style="font-size: 3rem;margin-right: 7px;color: #00bcd4; margin-top: 7px;" class="fa fa-paw " ></span><span id="titel"></span></a>
                 </li>
             </ul>
             <div class="profile-menu">
                 <form style="display: inline;" action="" method="post"><button  type="submit" name="out" style="padding: 12px;margin-top: 18px;background: #11a8ab;outline: 0;border: 0;color: #fff;">Log out<a href="#26"><span class="fas fa-sign-out-alt "></span></a></button></form>
                 <div class="profile-picture small-profile-picture">
-                    <img     width= 158% alt="Anne Hathaway picture" src="https://getwallpapers.com/wallpaper/full/c/c/0/644269.jpg">
+                    <img     width= 178% alt="Anne Hathaway picture" src="https://th.bing.com/th/id/OIP.sHOb6gcUkB5doM5YBuJ2hAHaEK?pid=ImgDet&rs=1">
                 </div>
             </div>
         </header>

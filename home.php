@@ -15,6 +15,9 @@ include 'header.php';
                     <li>
                         <a class="menu-box-tab" href="brids.php"><span class="icon fas fa-dove scnd-font-color"></span>Brids<div class="menu-box-number">3</div></a>                            
                     </li>                
+                    <li>
+                        <a class="menu-box-tab" href="addanimal.php"><span class="icon fas fa-dog scnd-font-color"></span>Add animals<div class="menu-box-number">1</div></a>                            
+                    </li>                
                 </ul>
                 <ul class="social horizontal-list block"> <!-- SOCIAL (LEFT-CONTAINER) -->
                     <li class="facebook"><p class="icon"><span class="zocial-facebook"></span></p><p class="number">248k</p></li>

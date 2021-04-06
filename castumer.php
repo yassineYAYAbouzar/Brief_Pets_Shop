@@ -3,7 +3,7 @@
 <?php
 include 'header.php';
 include 'conect.php';
-$stmt2 = $con->prepare("SELECT * FROM `animals`");
+$stmt2 = $con->prepare("SELECT * FROM `client`");
 $stmt2->execute();
 
 ?>
@@ -16,14 +16,10 @@ $stmt2->execute();
          <table cellpadding="0" cellspacing="0">
            <thead>
              <tr>
-               <th>Pet_iD</th>
-               <th>Petcategory</th>
-               <th>Breed</th>
-               <th>Weight(kg)</th>
-               <th>Height(cm)</th>
-               <th>Age(m)</th>
-               <th>Fur</th>
-               <th>Cost(Rs)</th>
+               <th>Id</th>
+               <th>Nom</th>
+               <th>adress</th>
+               <th>phone</th>
              </tr>
            </thead>
          </table>
@@ -35,14 +31,10 @@ $stmt2->execute();
      foreach ($stmt2 as $stm) {
      echo '  
              <tr>
-               <td>' .$stm['pet_id'] .'</td>
-               <td>' .$stm['category'] .'</td>
-               <td>' .$stm['breed'] .'</td>
-               <td>' .$stm['weight'] .'</td>
-               <td>' .$stm['height'] .'</td>
-               <td>' .$stm['age'] .'</td>
-               <td>' .$stm['fur'] .'</td>
-               <td>' .$stm['cost'] .'</td>
+               <td>' .$stm['id'] .'</td>
+               <td>' .$stm['nom'] .'</td>
+               <td>' .$stm['address'] .'</td>
+               <td>' .$stm['phone'] .'</td>
              </tr>
            
      ';};
@@ -55,12 +47,14 @@ $stmt2->execute();
      </body>
 </div> <!-- end main-container -->
     <div class="botons">
-    <button type="submit"class="btn btn-5 danger">Delete<i style="margin-left: 5px;" class="fas fa-trash"></i></button>
-    <button type="submit"class="btn btn-5 primery">Update<i style="margin-left: 5px;"  class="far fa-edit"></i></button>
-    <button type="submit"class="btn btn-5">Add<i style="margin-left: 5px;"  class="fas fa-plus-circle"></i></button>
-    <div class="deletis">
+      <a href="./updatecustomer.php"><button type="submit"class="btn btn-5 primery">Update<i style="margin-left: 5px;"  class="far fa-edit"></i></a></button></a>
+      <a href="./insertcustomers.php"><button type="submit"class="btn btn-5">Add<i style="margin-left: 5px;"  class="fas fa-plus-circle"></i></button></a>
+      <form action="./core/delete-costumer.php" method="post">
+      <button type="submit" class="btn btn-5 danger" ><i style="margin-left: 5px;" class="fas fa-trash"></i></button>
+      <div class="deletis">
         <i class="fas fa-trash"></i>
-        <input type="text"  placeholder="Enter Id To delete">
+        <input type="text" name="id" placeholder="Enter Id To delete">
+        </form>
     </div>
 
     </div>
