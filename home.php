@@ -66,10 +66,9 @@ include 'header.php';
                             <a class="menu-box-tab" href="salesdetaile.php"><span class="icon fas fa-info-circle scnd-font-color"></span>Salesdetails</a>
                         </li>
                         <li>
-                            <a class="menu-box-tab" href="castumer.php"><sapn class="icon fas fa-people-carry scnd-font-color"></sapn>Customer</a>
+                            <a class="menu-box-tab" href="castumer.php"><sapn class="icon fas fa-people-carry scnd-font-color"></sapn>Customer<div class="menu-box-number">17</div></a>
                         </li>                        
                     </ul>
-
                 </div>
                 
             </div>
